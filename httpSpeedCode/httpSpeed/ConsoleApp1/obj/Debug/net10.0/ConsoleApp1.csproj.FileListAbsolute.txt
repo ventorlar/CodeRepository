@@ -1,0 +1,14 @@
+D:\vsproject\httpSpeed\ConsoleApp1\bin\Debug\net10.0\ConsoleApp1.exe
+D:\vsproject\httpSpeed\ConsoleApp1\bin\Debug\net10.0\ConsoleApp1.deps.json
+D:\vsproject\httpSpeed\ConsoleApp1\bin\Debug\net10.0\ConsoleApp1.runtimeconfig.json
+D:\vsproject\httpSpeed\ConsoleApp1\bin\Debug\net10.0\ConsoleApp1.dll
+D:\vsproject\httpSpeed\ConsoleApp1\bin\Debug\net10.0\ConsoleApp1.pdb
+D:\vsproject\httpSpeed\ConsoleApp1\obj\Debug\net10.0\ConsoleApp1.GeneratedMSBuildEditorConfig.editorconfig
+D:\vsproject\httpSpeed\ConsoleApp1\obj\Debug\net10.0\ConsoleApp1.AssemblyInfoInputs.cache
+D:\vsproject\httpSpeed\ConsoleApp1\obj\Debug\net10.0\ConsoleApp1.AssemblyInfo.cs
+D:\vsproject\httpSpeed\ConsoleApp1\obj\Debug\net10.0\ConsoleApp1.csproj.CoreCompileInputs.cache
+D:\vsproject\httpSpeed\ConsoleApp1\obj\Debug\net10.0\ConsoleApp1.dll
+D:\vsproject\httpSpeed\ConsoleApp1\obj\Debug\net10.0\refint\ConsoleApp1.dll
+D:\vsproject\httpSpeed\ConsoleApp1\obj\Debug\net10.0\ConsoleApp1.pdb
+D:\vsproject\httpSpeed\ConsoleApp1\obj\Debug\net10.0\ConsoleApp1.genruntimeconfig.cache
+D:\vsproject\httpSpeed\ConsoleApp1\obj\Debug\net10.0\ref\ConsoleApp1.dll

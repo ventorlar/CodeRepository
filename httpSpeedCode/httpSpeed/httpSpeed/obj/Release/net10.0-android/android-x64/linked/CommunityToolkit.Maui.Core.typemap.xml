@@ -1,0 +1,9 @@
+<api type="release" assembly-name="CommunityToolkit.Maui.Core" mvid="2f255e66c197441696bcf9e3e70bee31">
+  <module assembly-name="CommunityToolkit.Maui.Core" mvid="2f255e66c197441696bcf9e3e70bee31" mvid-bytes="Zl4lL5fBFkSWvPnj5wvuMQ==">
+    <types-scratch>
+      <entry key="crc64159f3caeb1269279/MauiDrawingView" java-name="crc64159f3caeb1269279/MauiDrawingView" managed-type-name="CommunityToolkit.Maui.Core.Views.MauiDrawingView" token="33554453" />
+      <entry key="crc64159f3caeb1269279/MauiSemanticOrderView" java-name="crc64159f3caeb1269279/MauiSemanticOrderView" managed-type-name="CommunityToolkit.Maui.Core.Views.MauiSemanticOrderView" token="33554459" />
+      <entry key="crc6436e425876cb621d9/FragmentLifecycleManager" java-name="crc6436e425876cb621d9/FragmentLifecycleManager" managed-type-name="CommunityToolkit.Maui.Core.Services.FragmentLifecycleManager" token="33554461" />
+    </types-scratch>
+  </module>
+</api>

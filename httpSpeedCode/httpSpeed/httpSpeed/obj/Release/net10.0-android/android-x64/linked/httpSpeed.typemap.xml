@@ -1,0 +1,8 @@
+<api type="release" assembly-name="httpSpeed" mvid="2ec1a2a58fdc4c9ca92054e511817ac3">
+  <module assembly-name="httpSpeed" mvid="2ec1a2a58fdc4c9ca92054e511817ac3" mvid-bytes="paLBLtyPnEypIFTlEYF6ww==">
+    <types-scratch>
+      <entry key="crc64497d93b4f49661ee/MainActivity" java-name="crc64497d93b4f49661ee/MainActivity" managed-type-name="httpSpeed.MainActivity" token="33554453" />
+      <entry key="crc64497d93b4f49661ee/MainApplication" java-name="crc64497d93b4f49661ee/MainApplication" managed-type-name="httpSpeed.MainApplication" token="33554454" />
+    </types-scratch>
+  </module>
+</api>

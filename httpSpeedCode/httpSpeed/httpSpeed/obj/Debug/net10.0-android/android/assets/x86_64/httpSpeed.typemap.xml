@@ -1,0 +1,10 @@
+<api type="debug" assembly-name="httpSpeed" mvid="c6c89d0cff0d47e99f10683103bc94dd">
+  <java-to-managed>
+    <entry java-name="crc64497d93b4f49661ee/MainActivity" managed-name="httpSpeed.MainActivity, httpSpeed" managed-type-token-id="33554453" />
+    <entry java-name="crc64497d93b4f49661ee/MainApplication" managed-name="httpSpeed.MainApplication, httpSpeed" managed-type-token-id="33554454" />
+  </java-to-managed>
+  <managed-to-java>
+    <entry java-name="crc64497d93b4f49661ee/MainActivity" managed-name="httpSpeed.MainActivity, httpSpeed" managed-type-token-id="33554453" />
+    <entry java-name="crc64497d93b4f49661ee/MainApplication" managed-name="httpSpeed.MainApplication, httpSpeed" managed-type-token-id="33554454" />
+  </managed-to-java>
+</api>

@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Name="MyPage"
+             x:Class="httpSpeed.View.MauiMainPage"
+             xmlns:viewmodel="clr-namespace:httpSpeed.ViewModel"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             x:DataType="viewmodel:MauiMainPageViewModel">
+
+    <ContentPage.Resources>
+        <Style TargetType="Border" Class="BorderStyle">
+            <Setter Property="Stroke" Value="Blue"/>
+            <Setter Property="StrokeThickness" Value="2"/>
+            <Setter Property="StrokeShape" Value="RoundRectangle 15"/>
+        </Style>
+        <Style TargetType="Label" Class="LabelStyle">
+            <Setter Property="Margin" Value="5,0,0,0"/>
+            <Setter Property="VerticalTextAlignment" Value="Center"/>
+        </Style>
+    </ContentPage.Resources>
+
+    <Border StyleClass="BorderStyle">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Border StyleClass="BorderStyle" Grid.Row="0" Grid.Column="0">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="auto"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Label Text="域名/ip：" StyleClass="LabelStyle" Grid.Row="0" Grid.Column="0"/>
+                    <Entry Text="{Binding Domain}" Placeholder="输入域名或ip" Grid.Row="0" Grid.Column="1"/>
+                </Grid>
+            </Border>
+
+            <Border StyleClass="BorderStyle" Grid.Row="1" Grid.Column="0">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="auto"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="auto"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Label Text="选择协议：" StyleClass="LabelStyle" Grid.Row="0" Grid.Column="0"/>
+                    <Picker x:Name="myPicker" 
+                            ItemsSource="{Binding PickerItems}" 
+                            SelectedItem="{Binding SelectedPickerItems}"
+                            Grid.Row="0" Grid.Column="1">
+                        <Picker.Behaviors>
+                            <toolkit:EventToCommandBehavior
+                                BindingContext="{Binding BindingContext, Source={x:Reference myPicker}}"
+                                EventName="SelectedIndexChanged" 
+                                Command="{Binding PickerSelectedIndexChangedCommand}"
+                                CommandParameter="{Binding SelectedItem, Source={x:Reference myPicker}}" />
+                        </Picker.Behaviors>
+                    </Picker>
+                    <Label Text="端口号：" StyleClass="LabelStyle" Grid.Row="0" Grid.Column="2"/>
+                    <Entry Text="{Binding Port}" Placeholder="端口号" Grid.Row="0" Grid.Column="3"/>
+                </Grid>
+            </Border>
+
+            <Border StyleClass="BorderStyle" Grid.Row="2" Grid.Column="0">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="auto"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Label Text="延迟时间：" StyleClass="LabelStyle" Grid.Row="0" Grid.Column="0"/>
+                    <Label Text="{Binding DelayTime}" StyleClass="LabelStyle" Grid.Row="0" Grid.Column="1"/>
+                </Grid>
+            </Border>
+
+            <Border StyleClass="BorderStyle" Grid.Row="3" Grid.Column="0">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Button Text="开始测试" Command="{Binding StartCommand}" BackgroundColor="{Binding ButtonColor}" Grid.Row="0" Grid.Column="0">
+                        <VisualStateManager.VisualStateGroups>
+                            <VisualStateGroupList>
+                                <VisualStateGroup Name="CommonStates">
+
+                                    <VisualState Name="Normal" />
+
+                                    <VisualState Name="PointerOver">
+                                        <VisualState.Setters>
+                                            <Setter Property="BackgroundColor" Value="DarkBlue" />
+                                            <Setter Property="TextColor" Value="White" />
+                                        </VisualState.Setters>
+                                    </VisualState>
+
+                                    <VisualState Name="Pressed">
+                                        <VisualState.Setters>
+                                            <Setter Property="BackgroundColor" Value="Orange" />
+                                        </VisualState.Setters>
+                                    </VisualState>
+
+                                </VisualStateGroup>
+                            </VisualStateGroupList>
+                        </VisualStateManager.VisualStateGroups>
+                    </Button>
+                </Grid>
+            </Border>
+
+            <Border StyleClass="BorderStyle" Grid.Row="4" Grid.Column="0">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="auto"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="auto"/>
+                    </Grid.ColumnDefinitions>
+                    <Label Text="信息：" StyleClass="LabelStyle" Grid.Row="0" Grid.Column="0"/>
+                    <ScrollView Orientation="Horizontal" Grid.Row="0" Grid.Column="1">
+                        <Label Text="{Binding ErrorMessage}" StyleClass="LabelStyle" MaxLines="1" LineBreakMode="NoWrap" />
+                    </ScrollView>
+                    <ImageButton Command="{Binding CoyptoclipboardCommand}" Source="coyptoclipboard.png" Padding="2,6,0,6" Grid.Row="0" Grid.Column="2">
+                        <VisualStateManager.VisualStateGroups>
+                            <VisualStateGroupList>
+                                <VisualStateGroup Name="CommonStates">
+                                    <VisualState Name="Normal" />
+
+                                    <VisualState Name="PointerOver">
+                                        <VisualState.Setters>
+                                            <Setter Property="BackgroundColor" Value="#20000000" />
+                                            <Setter Property="Opacity" Value="0.8" />
+                                        </VisualState.Setters>
+                                    </VisualState>
+                                </VisualStateGroup>
+                            </VisualStateGroupList>
+                        </VisualStateManager.VisualStateGroups>
+                    </ImageButton>
+                </Grid>
+            </Border>
+        </Grid>
+    </Border>
+</ContentPage>

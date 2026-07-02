@@ -1,0 +1,7 @@
+<Solution>
+  <Project Path="ConsoleApp1/ConsoleApp1.csproj" />
+  <Project Path="ConsoleApp2/ConsoleApp2.csproj" Id="52d04be0-162c-458c-b74a-bbc42e50a808" />
+  <Project Path="httpSpeed/httpSpeed.csproj">
+    <Deploy Solution="Debug|*" />
+  </Project>
+</Solution>
