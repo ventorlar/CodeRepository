@@ -1,12 +1,54 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\vsproject\\httpSpeed\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8B1DA789-969C-DD9C-A7FD-69DE597192A8}|httpSpeed\\httpSpeed.csproj|d:\\vsproject\\httpspeed\\httpspeed\\viewmodel\\mauimainpageviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8B1DA789-969C-DD9C-A7FD-69DE597192A8}|httpSpeed\\httpSpeed.csproj|solutionrelative:httpspeed\\viewmodel\\mauimainpageviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8B1DA789-969C-DD9C-A7FD-69DE597192A8}|httpSpeed\\httpSpeed.csproj|d:\\vsproject\\httpspeed\\httpspeed\\view\\mauimainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{8B1DA789-969C-DD9C-A7FD-69DE597192A8}|httpSpeed\\httpSpeed.csproj|solutionrelative:httpspeed\\view\\mauimainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MauiMainPageViewModel.cs",
+              "DocumentMoniker": "D:\\vsproject\\httpSpeed\\httpSpeed\\ViewModel\\MauiMainPageViewModel.cs",
+              "RelativeDocumentMoniker": "httpSpeed\\ViewModel\\MauiMainPageViewModel.cs",
+              "ToolTip": "D:\\vsproject\\httpSpeed\\httpSpeed\\ViewModel\\MauiMainPageViewModel.cs",
+              "RelativeToolTip": "httpSpeed\\ViewModel\\MauiMainPageViewModel.cs",
+              "ViewState": "AgIAADMAAAAAAAAAAAAIwEEAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-03T07:25:20.586Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MauiMainPage.xaml",
+              "DocumentMoniker": "D:\\vsproject\\httpSpeed\\httpSpeed\\View\\MauiMainPage.xaml",
+              "RelativeDocumentMoniker": "httpSpeed\\View\\MauiMainPage.xaml",
+              "ToolTip": "D:\\vsproject\\httpSpeed\\httpSpeed\\View\\MauiMainPage.xaml",
+              "RelativeToolTip": "httpSpeed\\View\\MauiMainPage.xaml",
+              "ViewState": "AgIAACoAAAAAAAAAAAAAADcAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-07-03T07:23:29.01Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }

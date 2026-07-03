@@ -12,7 +12,7 @@ namespace httpSpeed.Model
         }
         public bool DomainIsValid(string domain)
         {
-            return domain.Contains(":");
+            return domain.Contains("://");
         }
     }
 }

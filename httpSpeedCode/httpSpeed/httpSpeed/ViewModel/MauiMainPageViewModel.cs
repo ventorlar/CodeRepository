@@ -58,17 +58,17 @@ namespace httpSpeed.ViewModel
         private async void Start()
         {
             CheckParameters cp=new CheckParameters();
-            if (!cp.PortIsValid(Port))
-            {
-                await DisplayPopup("端口号错误！");
-                return;
-            }
+            //if (!cp.PortIsValid(Port))
+            //{
+            //    await DisplayPopup("端口号错误！");
+            //    return;
+            //}
             if (cp.DomainIsValid(Domain))
             {
-                await DisplayPopup("域名不能包含协议或端口号！");
+                await DisplayPopup("域名不能包含协议！");
                 return;
             }
-            string ip = SelectedPickerItems+"://" + Domain + ":"+Port;
+            string ip = SelectedPickerItems+"://" + Domain;
             TimeWatch timeWatch = new TimeWatch();
             ResultModel rm = new ResultModel();
             rm = timeWatch.TimeCal(ip);
